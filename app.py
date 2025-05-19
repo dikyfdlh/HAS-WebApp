@@ -21,9 +21,9 @@ def services():
     return render_template('services.html')
 
 # Route untuk halaman portfolio
-@app.route('/portfolio')
-def portfolio():
-    return render_template('portfolio.html')
+@app.route('/portofolio')
+def portofolio():
+    return render_template('portofolio.html')
 
 # Route untuk halaman kontak
 @app.route('/contact')
