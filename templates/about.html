@@ -1,0 +1,164 @@
+{% extends "layout.html" %}
+
+{% block title %}Tentang Kami - Harsha Ananta Solution{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>Tentang Kami</h1>
+        <p>Mengenal lebih dekat Harsha Ananta Solution</p>
+    </div>
+</section>
+
+<section class="about-section">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-image">
+                <!-- <img src="{{ url_for('static', filename='images/5.jpg') }}" alt="Tentang Harsha Ananta"> -->
+            </div>
+            <div class="about-text">
+                <h2>Sejarah Kami</h2>
+                <p>Harsha Ananta Solution didirikan pada tahun 2018 oleh sekelompok profesional teknologi yang memiliki visi untuk membantu bisnis di Indonesia bertransformasi digital. Berawal dari sebuah startup kecil dengan 5 orang anggota tim, kami telah berkembang menjadi perusahaan teknologi yang dipercaya oleh berbagai klien dari berbagai industri.</p>
+                <p>Nama "Harsha Ananta" berasal dari bahasa Sansekerta yang berarti "kebahagiaan tanpa batas". Kami percaya bahwa teknologi yang tepat dapat membawa kebahagiaan dan kesuksesan tanpa batas bagi bisnis yang mengadopsinya.</p>
+                <p>Selama perjalanan kami, kami telah menyelesaikan lebih dari 100 proyek teknologi dan membantu puluhan perusahaan meningkatkan efisiensi operasional mereka melalui solusi digital yang inovatif.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="vision-mission">
+    <div class="container">
+        <div class="vm-content">
+            <div class="vm-item">
+                <h2>Visi Kami</h2>
+                <p>Menjadi mitra teknologi terpercaya yang membantu bisnis di Indonesia bertransformasi digital dan mencapai potensi penuh mereka di era digital.</p>
+            </div>
+            <div class="vm-item">
+                <h2>Misi Kami</h2>
+                <ul>
+                    <li>Menyediakan solusi teknologi inovatif yang disesuaikan dengan kebutuhan spesifik klien</li>
+                    <li>Membantu bisnis meningkatkan efisiensi operasional melalui otomatisasi dan digitalisasi</li>
+                    <li>Mendukung pertumbuhan bisnis klien melalui teknologi yang skalabel dan berkelanjutan</li>
+                    <li>Memberikan layanan dengan standar kualitas tertinggi dan dukungan yang responsif</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="team-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Tim Kami</h2>
+            <p>Kenali para profesional di balik Harsha Ananta Solution</p>
+        </div>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="{{ url_for('static', filename='images/6.jpg') }}" alt="Team Member">
+                </div>
+                <div class="member-info">
+                    <h3>Adi Wijaya</h3>
+                    <p class="position">CEO & Founder</p>
+                    <p class="bio">Dengan pengalaman lebih dari 15 tahun di industri teknologi, Adi memimpin visi dan strategi perusahaan.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="{{ url_for('static', filename='images/7.jpg') }}" alt="Team Member">
+                </div>
+                <div class="member-info">
+                    <h3>Maya Sari</h3>
+                    <p class="position">CTO</p>
+                    <p class="bio">Maya adalah ahli teknologi dengan keahlian dalam pengembangan software dan arsitektur sistem.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="{{ url_for('static', filename='images/1.jpg') }}" alt="Team Member">
+                </div>
+                <div class="member-info">
+                    <h3>Budi Santoso</h3>
+                    <p class="position">Lead Developer</p>
+                    <p class="bio">Budi memimpin tim pengembangan dengan fokus pada kualitas kode dan inovasi teknologi.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="{{ url_for('static', filename='images/2.jpg') }}" alt="Team Member">
+                </div>
+                <div class="member-info">
+                    <h3>Dewi Anggraini</h3>
+                    <p class="position">UI/UX Designer</p>
+                    <p class="bio">Dewi adalah desainer berbakat yang menciptakan pengalaman pengguna yang intuitif dan menarik.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="values-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Nilai-Nilai Kami</h2>
+            <p>Prinsip yang memandu kami dalam memberikan layanan terbaik</p>
+        </div>
+        <div class="values-grid">
+            <div class="value-item">
+                <div class="value-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Kualitas</h3>
+                <p>Kami berkomitmen untuk memberikan solusi teknologi dengan kualitas tertinggi yang memenuhi standar industri.</p>
+            </div>
+            <div class="value-item">
+                <div class="value-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Inovasi</h3>
+                <p>Kami terus berinovasi dan mengadopsi teknologi terbaru untuk memberikan solusi yang relevan dan efektif.</p>
+            </div>
+            <div class="value-item">
+                <div class="value-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3>Integritas</h3>
+                <p>Kami menjalankan bisnis dengan kejujuran, transparansi, dan etika yang tinggi dalam setiap interaksi.</p>
+            </div>
+            <div class="value-item">
+                <div class="value-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Kolaborasi</h3>
+                <p>Kami percaya pada kekuatan kolaborasi dan bekerja sama dengan klien untuk mencapai tujuan bersama.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Siap untuk bekerja sama dengan kami?</h2>
+            <p>Hubungi kami sekarang untuk mendiskusikan bagaimana kami dapat membantu bisnis Anda</p>
+            <a href="{{ url_for('contact') }}" class="btn">Hubungi Kami</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

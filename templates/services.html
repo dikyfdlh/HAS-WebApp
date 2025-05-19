@@ -1,0 +1,182 @@
+{% extends "layout.html" %}
+
+{% block title %}Layanan - Harsha Ananta Solution{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>Layanan Kami</h1>
+        <p>Solusi teknologi komprehensif untuk kebutuhan bisnis Anda</p>
+    </div>
+</section>
+
+<section class="services-section">
+    <div class="container">
+        <div class="services-intro">
+            <p>Di Harsha Ananta Solution, kami menawarkan berbagai layanan teknologi yang dirancang untuk membantu bisnis Anda bertransformasi digital dan meningkatkan efisiensi operasional. Setiap layanan kami disesuaikan dengan kebutuhan spesifik klien untuk memastikan hasil yang optimal.</p>
+        </div>
+        
+        <div class="service-item">
+            <div class="service-image">
+                <img src="{{ url_for('static', filename='images/3.jpg') }}" alt="Pengembangan Web">
+            </div>
+            <div class="service-content">
+                <h2>Pengembangan Web</h2>
+                <p>Kami mengembangkan website dan aplikasi web yang responsif, cepat, dan user-friendly untuk membantu bisnis Anda memiliki kehadiran online yang kuat. Layanan pengembangan web kami meliputi:</p>
+                <ul>
+                    <li>Website Perusahaan</li>
+                    <li>E-Commerce</li>
+                    <li>Aplikasi Web Kustom</li>
+                    <li>Portal Intranet</li>
+                    <li>Sistem Manajemen Konten (CMS)</li>
+                </ul>
+                <p>Kami menggunakan teknologi terbaru seperti React, Angular, Vue.js, dan framework backend seperti Django, Flask, dan Laravel untuk memastikan aplikasi web Anda memiliki performa terbaik.</p>
+            </div>
+        </div>
+        
+        <div class="service-item reverse">
+            <div class="service-image">
+                <img src="{{ url_for('static', filename='images/4.jpg') }}" alt="Aplikasi Mobile">
+            </div>
+            <div class="service-content">
+                <h2>Pengembangan Aplikasi Mobile</h2>
+                <p>Kami mengembangkan aplikasi mobile yang intuitif dan berkinerja tinggi untuk platform Android dan iOS. Layanan pengembangan aplikasi mobile kami meliputi:</p>
+                <ul>
+                    <li>Aplikasi Native (Android & iOS)</li>
+                    <li>Aplikasi Cross-Platform (React Native, Flutter)</li>
+                    <li>Aplikasi E-Commerce Mobile</li>
+                    <li>Aplikasi Enterprise</li>
+                    <li>Integrasi dengan Sistem Backend</li>
+                </ul>
+                <p>Tim kami berpengalaman dalam mengembangkan aplikasi mobile yang tidak hanya menarik secara visual tetapi juga memberikan pengalaman pengguna yang optimal.</p>
+            </div>
+        </div>
+        
+        <div class="service-item">
+            <div class="service-image">
+                <img src="{{ url_for('static', filename='images/5.jpg') }}" alt="Solusi Cloud">
+            </div>
+            <div class="service-content">
+                <h2>Solusi Cloud</h2>
+                <p>Kami membantu bisnis Anda memanfaatkan kekuatan cloud computing untuk meningkatkan skalabilitas, keamanan, dan efisiensi. Layanan cloud kami meliputi:</p>
+                <ul>
+                    <li>Migrasi ke Cloud</li>
+                    <li>Infrastruktur sebagai Layanan (IaaS)</li>
+                    <li>Platform sebagai Layanan (PaaS)</li>
+                    <li>Software sebagai Layanan (SaaS)</li>
+                    <li>Manajemen Cloud</li>
+                    <li>Keamanan Cloud</li>
+                </ul>
+                <p>Kami bekerja dengan penyedia cloud terkemuka seperti AWS, Google Cloud, dan Microsoft Azure untuk memberikan solusi cloud yang optimal untuk bisnis Anda.</p>
+            </div>
+        </div>
+        
+        <div class="service-item reverse">
+            <div class="service-image">
+                <img src="{{ url_for('static', filename='images/6.jpg') }}" alt="Analisis Data">
+            </div>
+            <div class="service-content">
+                <h2>Analisis Data & Business Intelligence</h2>
+                <p>Kami membantu bisnis Anda mengubah data menjadi wawasan yang dapat ditindaklanjuti untuk pengambilan keputusan yang lebih baik. Layanan analisis data kami meliputi:</p>
+                <ul>
+                    <li>Data Warehousing</li>
+                    <li>Business Intelligence</li>
+                    <li>Dashboard & Visualisasi Data</li>
+                    <li>Analisis Prediktif</li>
+                    <li>Big Data Processing</li>
+                    <li>Machine Learning</li>
+                </ul>
+                <p>Tim kami menggunakan tools dan teknologi terbaru seperti Python, R, Tableau, Power BI, dan TensorFlow untuk menganalisis data Anda dan memberikan wawasan yang berharga.</p>
+            </div>
+        </div>
+        
+        <div class="service-item">
+            <div class="service-image">
+                <img src="{{ url_for('static', filename='images/7.jpg') }}" alt="Konsultasi IT">
+            </div>
+            <div class="service-content">
+                <h2>Konsultasi IT</h2>
+                <p>Kami menyediakan layanan konsultasi IT untuk membantu bisnis Anda merencanakan dan mengimplementasikan strategi teknologi yang efektif. Layanan konsultasi kami meliputi:</p>
+                <ul>
+                    <li>Perencanaan Strategi IT</li>
+                    <li>Audit Teknologi</li>
+                    <li>Manajemen Proyek IT</li>
+                    <li>Konsultasi Keamanan IT</li>
+                    <li>Transformasi Digital</li>
+                </ul>
+                <p>Konsultan kami yang berpengalaman akan bekerja sama dengan tim Anda untuk memahami kebutuhan bisnis Anda dan merekomendasikan solusi teknologi yang tepat.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="methodology">
+    <div class="container">
+        <div class="section-header">
+            <h2>Metodologi Kami</h2>
+            <p>Pendekatan kami dalam mengembangkan solusi teknologi</p>
+        </div>
+        <div class="methodology-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Discovery</h3>
+                    <p>Kami memulai dengan memahami kebutuhan bisnis Anda, tujuan, dan tantangan yang dihadapi.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Perencanaan</h3>
+                    <p>Kami mengembangkan rencana proyek yang komprehensif dengan timeline, deliverables, dan milestone yang jelas.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Desain</h3>
+                    <p>Kami merancang solusi yang memenuhi kebutuhan Anda dengan fokus pada user experience dan fungsionalitas.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Pengembangan</h3>
+                    <p>Tim kami mengembangkan solusi menggunakan metodologi Agile untuk memastikan fleksibilitas dan kualitas.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h3>Pengujian</h3>
+                    <p>Kami melakukan pengujian menyeluruh untuk memastikan solusi berfungsi dengan baik dan bebas dari bug.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">6</div>
+                <div class="step-content">
+                    <h3>Deployment</h3>
+                    <p>Kami men-deploy solusi ke lingkungan produksi dengan gangguan minimal pada operasi bisnis Anda.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">7</div>
+                <div class="step-content">
+                    <h3>Dukungan</h3>
+                    <p>Kami menyediakan dukungan berkelanjutan dan pemeliharaan untuk memastikan solusi tetap optimal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Butuh solusi teknologi untuk bisnis Anda?</h2>
+            <p>Hubungi kami sekarang untuk konsultasi gratis dan temukan bagaimana kami dapat membantu Anda</p>
+            <a href="{{ url_for('contact') }}" class="btn">Hubungi Kami</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

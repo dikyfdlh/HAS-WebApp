@@ -1,0 +1,154 @@
+{% extends "layout.html" %}
+
+{% block title %}Beranda - Harsha Ananta Solution{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Harsha Ananta Solution</h1>
+            <p>Solusi teknologi terpadu untuk mengembangkan bisnis Anda ke level berikutnya</p>
+            <a href="{{ url_for('contact') }}" class="btn">Hubungi Kami</a>
+        </div>
+    </div>
+</section>
+
+<section class="about-preview">
+    <div class="container">
+        <div class="section-header">
+            <h2>Tentang Kami</h2>
+            <p>Mengenal lebih dekat Harsha Ananta Solution</p>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='images/1.jpg') }}" alt="Tentang Harsha Ananta">
+            </div>
+            <div class="about-text">
+                <h3>Siapa Kami?</h3>
+                <p>Harsha Ananta Solution adalah perusahaan teknologi yang berfokus pada pengembangan solusi digital inovatif untuk membantu bisnis berkembang di era digital. Dengan tim ahli yang berpengalaman, kami menyediakan layanan teknologi terpadu yang disesuaikan dengan kebutuhan spesifik klien kami.</p>
+                <p>Didirikan pada tahun 2018, kami telah membantu puluhan perusahaan dari berbagai industri untuk bertransformasi digital dan meningkatkan efisiensi operasional mereka.</p>
+                <a href="{{ url_for('about') }}" class="btn-secondary">Pelajari Lebih Lanjut</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services-preview">
+    <div class="container">
+        <div class="section-header">
+            <h2>Layanan Kami</h2>
+            <p>Solusi teknologi komprehensif untuk kebutuhan bisnis Anda</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Pengembangan Web</h3>
+                <p>Website responsif dan aplikasi web yang disesuaikan dengan kebutuhan bisnis Anda</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Aplikasi Mobile</h3>
+                <p>Aplikasi mobile untuk Android dan iOS dengan pengalaman pengguna yang optimal</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3>Solusi Cloud</h3>
+                <p>Infrastruktur cloud yang aman, skalabel, dan efisien untuk bisnis Anda</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Analisis Data</h3>
+                <p>Wawasan bisnis yang berharga melalui analisis data yang komprehensif</p>
+            </div>
+        </div>
+        <div class="services-cta">
+            <a href="{{ url_for('services') }}" class="btn">Lihat Semua Layanan</a>
+        </div>
+    </div>
+</section>
+
+<section class="portfolio-preview">
+    <div class="container">
+        <div class="section-header">
+            <h2>Portfolio Kami</h2>
+            <p>Proyek-proyek terbaru yang telah kami kerjakan</p>
+        </div>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="{{ url_for('static', filename='images/2.jpg') }}" alt="Project 1">
+                <div class="portfolio-overlay">
+                    <h3>Sistem Manajemen Inventaris</h3>
+                    <p>Aplikasi web untuk pengelolaan inventaris perusahaan manufaktur</p>
+                    <a href="{{ url_for('portfolio') }}" class="btn-small">Detail</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="{{ url_for('static', filename='images/3.jpg') }}" alt="Project 2">
+                <div class="portfolio-overlay">
+                    <h3>Aplikasi E-Commerce</h3>
+                    <p>Platform belanja online untuk bisnis retail dengan fitur lengkap</p>
+                    <a href="{{ url_for('portfolio') }}" class="btn-small">Detail</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="{{ url_for('static', filename='images/4.jpg') }}" alt="Project 3">
+                <div class="portfolio-overlay">
+                    <h3>Dashboard Analitik</h3>
+                    <p>Visualisasi data real-time untuk pengambilan keputusan bisnis</p>
+                    <a href="{{ url_for('portfolio') }}" class="btn-small">Detail</a>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-cta">
+            <a href="{{ url_for('portfolio') }}" class="btn">Lihat Semua Proyek</a>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <div class="container">
+        <div class="section-header">
+            <h2>Testimoni Klien</h2>
+            <p>Apa kata klien kami tentang layanan kami</p>
+        </div>
+        <div class="testimonial-slider">
+            <div class="testimonial-item">
+                <div class="testimonial-content">
+                    <p>"Harsha Ananta Solution telah membantu kami mengembangkan sistem manajemen yang sangat meningkatkan efisiensi operasional kami. Tim mereka sangat profesional dan responsif."</p>
+                </div>
+                <div class="testimonial-author">
+                    <h4>Budi Santoso</h4>
+                    <p>CEO, PT Maju Bersama</p>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-content">
+                    <p>"Aplikasi mobile yang dikembangkan oleh Harsha Ananta Solution telah membantu kami meningkatkan engagement pelanggan secara signifikan. Sangat merekomendasikan layanan mereka!"</p>
+                </div>
+                <div class="testimonial-author">
+                    <h4>Siti Rahayu</h4>
+                    <p>Marketing Director, PT Sukses Mandiri</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Siap untuk mengembangkan bisnis Anda?</h2>
+            <p>Hubungi kami sekarang untuk konsultasi gratis tentang solusi teknologi yang tepat untuk bisnis Anda</p>
+            <a href="{{ url_for('contact') }}" class="btn">Hubungi Kami</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

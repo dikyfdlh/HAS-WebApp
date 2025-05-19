@@ -1,0 +1,174 @@
+{% extends "layout.html" %}
+
+{% block title %}Kontak - Harsha Ananta Solution{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>Hubungi Kami</h1>
+        <p>Kami siap membantu Anda dengan solusi teknologi terbaik</p>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-info">
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="info-content">
+                    <h3>Alamat</h3>
+                    <p>Jl. Contoh No. 123, Jakarta Selatan<br>DKI Jakarta, Indonesia 12345</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="info-content">
+                    <h3>Telepon</h3>
+                    <p>+62 812 3456 7890</p>
+                    <p>+62 21 1234 5678</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info-content">
+                    <h3>Email</h3>
+                    <p>info@harshaananta.com</p>
+                    <p>support@harshaananta.com</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="info-content">
+                    <h3>Jam Kerja</h3>
+                    <p>Senin - Jumat: 09:00 - 17:00</p>
+                    <p>Sabtu: 09:00 - 13:00</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-form-container">
+            <h2>Kirim Pesan</h2>
+            <p>Isi formulir di bawah ini dan tim kami akan menghubungi Anda segera</p>
+            
+            <form action="{{ url_for('submit_contact') }}" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Nomor Telepon</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="company">Perusahaan</label>
+                    <input type="text" id="company" name="company">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subjek</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group full-width">
+                    <label for="message">Pesan</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="form-group full-width">
+                    <button type="submit" class="btn">Kirim Pesan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="map-section">
+    <div class="container">
+        <h2>Lokasi Kami</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126933.05719711995!2d106.7271728!3d-6.2295712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta%20Selatan%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1652345678901!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Pertanyaan Umum</h2>
+            <p>Jawaban untuk pertanyaan yang sering diajukan</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Berapa lama waktu yang dibutuhkan untuk mengembangkan sebuah proyek?</h3>
+                    <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Waktu pengembangan proyek bervariasi tergantung pada kompleksitas dan ruang lingkup proyek. Proyek sederhana dapat selesai dalam beberapa minggu, sementara proyek yang lebih kompleks mungkin membutuhkan beberapa bulan. Kami akan memberikan estimasi waktu yang akurat setelah memahami kebutuhan spesifik proyek Anda.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Berapa biaya untuk mengembangkan aplikasi web atau mobile?</h3>
+                    <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Biaya pengembangan aplikasi bervariasi tergantung pada kompleksitas, fitur, dan platform yang digunakan. Kami menawarkan solusi yang disesuaikan dengan budget Anda dan akan memberikan penawaran yang transparan setelah memahami kebutuhan proyek Anda. Hubungi kami untuk konsultasi gratis dan penawaran yang lebih akurat.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Apakah Anda menyediakan layanan pemeliharaan setelah proyek selesai?</h3>
+                    <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Ya, kami menyediakan layanan pemeliharaan dan dukungan berkelanjutan untuk memastikan aplikasi atau sistem Anda tetap berjalan optimal. Kami menawarkan berbagai paket pemeliharaan yang dapat disesuaikan dengan kebutuhan Anda, termasuk pembaruan rutin, perbaikan bug, dan peningkatan fitur.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Bagaimana proses kerja sama dengan Harsha Ananta Solution?</h3>
+                    <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Proses kerja sama kami dimulai dengan konsultasi awal untuk memahami kebutuhan Anda. Kemudian kami akan mengembangkan proposal yang mencakup ruang lingkup, timeline, dan biaya. Setelah persetujuan, kami akan memulai pengembangan dengan komunikasi rutin dan update progres. Setelah proyek selesai, kami akan memberikan dukungan untuk memastikan semuanya berjalan dengan baik.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+            const icon = item.querySelector('.toggle-icon i');
+            
+            question.addEventListener('click', function() {
+                // Toggle answer visibility
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    icon.classList.remove('fa-minus');
+                    icon.classList.add('fa-plus');
+                } else {
+                    answer.style.display = 'block';
+                    icon.classList.remove('fa-plus');
+                    icon.classList.add('fa-minus');
+                }
+            });
+        });
+    });
+</script>
+{% endblock %}
