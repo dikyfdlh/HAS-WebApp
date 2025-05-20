@@ -1630,6 +1630,9 @@ footer {
   .testimonial-item {
     flex: 0 0 100%;
   }
+  .methodology-steps::before {
+    left: 25px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1723,6 +1726,17 @@ footer {
 
   .step:hover {
     transform: translateX(5px);
+  }
+  .step {
+    gap: 15px;
+  }
+  .step-number {
+    min-width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  .step-content h3 {
+    font-size: 1.3rem;
   }
 }
 
