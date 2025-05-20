@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, flash
+from flask import Flask, render_template, request, redirect, url_for, flash, send_from_directory
 import os
 from datetime import datetime
 
@@ -64,6 +64,11 @@ def submit_contact():
         
         # Redirect kembali ke halaman kontak
         return redirect(url_for('contact'))
+
+# Route untuk mengakses gambar
+@app.route('/images/<path:filename>')
+def serve_image(filename):
+    return send_from_directory('static/images', filename)
 
 if __name__ == '__main__':
     app.run(debug=True)

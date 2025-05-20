@@ -16,95 +16,183 @@
             <p>Di Harsha Ananta Solution, kami menawarkan berbagai layanan teknologi yang dirancang untuk membantu bisnis Anda bertransformasi digital dan meningkatkan efisiensi operasional. Setiap layanan kami disesuaikan dengan kebutuhan spesifik klien untuk memastikan hasil yang optimal.</p>
         </div>
         
+        <h2 class="services-category-title">Layanan Teknologi Modern</h2>
+        
         <div class="service-item">
             <div class="service-image">
-                <img src="{{ url_for('static', filename='images/3.jpg') }}" alt="Pengembangan Web">
+                <img src="{{ url_for('serve_image', filename='smart-home-real-2.png') }}" alt="Smart Home">
             </div>
             <div class="service-content">
-                <h2>Pengembangan Web</h2>
-                <p>Kami mengembangkan website dan aplikasi web yang responsif, cepat, dan user-friendly untuk membantu bisnis Anda memiliki kehadiran online yang kuat. Layanan pengembangan web kami meliputi:</p>
+                <h2>Smart Home</h2>
+                <p>Kami menyediakan solusi rumah pintar yang terintegrasi untuk meningkatkan kenyamanan, keamanan, dan efisiensi energi di rumah Anda. Layanan smart home kami meliputi:</p>
                 <ul>
-                    <li>Website Perusahaan</li>
-                    <li>E-Commerce</li>
-                    <li>Aplikasi Web Kustom</li>
-                    <li>Portal Intranet</li>
-                    <li>Sistem Manajemen Konten (CMS)</li>
+                    <li>Sistem Otomatisasi Rumah</li>
+                    <li>Kontrol Pencahayaan Pintar</li>
+                    <li>Sistem Keamanan Terintegrasi</li>
+                    <li>Manajemen Energi Pintar</li>
+                    <li>Kontrol Suara dan Asisten Virtual</li>
                 </ul>
-                <p>Kami menggunakan teknologi terbaru seperti React, Angular, Vue.js, dan framework backend seperti Django, Flask, dan Laravel untuk memastikan aplikasi web Anda memiliki performa terbaik.</p>
+                <p>Dengan solusi smart home kami, Anda dapat mengontrol seluruh rumah Anda dari smartphone atau tablet, memberikan kenyamanan dan ketenangan pikiran.</p>
+                <a href="{{ url_for('contact') }}" class="btn-secondary">Konsultasi Gratis</a>
             </div>
         </div>
         
         <div class="service-item reverse">
             <div class="service-image">
-                <img src="{{ url_for('static', filename='images/4.jpg') }}" alt="Aplikasi Mobile">
+                <img src="{{ url_for('serve_image', filename='smart-farming-real.png') }}" alt="Smart Farming">
             </div>
             <div class="service-content">
-                <h2>Pengembangan Aplikasi Mobile</h2>
-                <p>Kami mengembangkan aplikasi mobile yang intuitif dan berkinerja tinggi untuk platform Android dan iOS. Layanan pengembangan aplikasi mobile kami meliputi:</p>
+                <h2>Smart Farming</h2>
+                <p>Kami mengembangkan solusi pertanian pintar yang menggunakan teknologi IoT, sensor, dan analitik data untuk meningkatkan produktivitas dan keberlanjutan pertanian. Layanan smart farming kami meliputi:</p>
                 <ul>
-                    <li>Aplikasi Native (Android & iOS)</li>
-                    <li>Aplikasi Cross-Platform (React Native, Flutter)</li>
-                    <li>Aplikasi E-Commerce Mobile</li>
-                    <li>Aplikasi Enterprise</li>
-                    <li>Integrasi dengan Sistem Backend</li>
+                    <li>Sistem Monitoring Tanaman</li>
+                    <li>Otomatisasi Irigasi</li>
+                    <li>Pemantauan Kondisi Tanah</li>
+                    <li>Prediksi Cuaca untuk Pertanian</li>
+                    <li>Analitik Data Pertanian</li>
                 </ul>
-                <p>Tim kami berpengalaman dalam mengembangkan aplikasi mobile yang tidak hanya menarik secara visual tetapi juga memberikan pengalaman pengguna yang optimal.</p>
+                <p>Solusi smart farming kami membantu petani mengoptimalkan penggunaan sumber daya, mengurangi biaya operasional, dan meningkatkan hasil panen.</p>
+                <a href="{{ url_for('contact') }}" class="btn-secondary">Konsultasi Gratis</a>
             </div>
         </div>
         
         <div class="service-item">
             <div class="service-image">
-                <img src="{{ url_for('static', filename='images/5.jpg') }}" alt="Solusi Cloud">
+                <img src="{{ url_for('serve_image', filename='smart-livestock-real.png') }}" alt="Smart Livestock">
             </div>
             <div class="service-content">
-                <h2>Solusi Cloud</h2>
-                <p>Kami membantu bisnis Anda memanfaatkan kekuatan cloud computing untuk meningkatkan skalabilitas, keamanan, dan efisiensi. Layanan cloud kami meliputi:</p>
+                <h2>Smart Livestock</h2>
+                <p>Kami menyediakan solusi peternakan pintar yang menggunakan teknologi IoT dan analitik data untuk meningkatkan kesehatan hewan, produktivitas, dan efisiensi operasional. Layanan smart livestock kami meliputi:</p>
                 <ul>
-                    <li>Migrasi ke Cloud</li>
-                    <li>Infrastruktur sebagai Layanan (IaaS)</li>
-                    <li>Platform sebagai Layanan (PaaS)</li>
-                    <li>Software sebagai Layanan (SaaS)</li>
-                    <li>Manajemen Cloud</li>
-                    <li>Keamanan Cloud</li>
+                    <li>Pemantauan Kesehatan Ternak</li>
+                    <li>Sistem Pemberian Pakan Otomatis</li>
+                    <li>Pelacakan Lokasi Ternak</li>
+                    <li>Analisis Perilaku Hewan</li>
+                    <li>Manajemen Kandang Pintar</li>
                 </ul>
-                <p>Kami bekerja dengan penyedia cloud terkemuka seperti AWS, Google Cloud, dan Microsoft Azure untuk memberikan solusi cloud yang optimal untuk bisnis Anda.</p>
+                <p>Dengan solusi smart livestock kami, peternak dapat memantau dan mengelola ternak mereka secara efisien, meningkatkan kesejahteraan hewan, dan mengoptimalkan produksi.</p>
+                <a href="{{ url_for('contact') }}" class="btn-secondary">Konsultasi Gratis</a>
             </div>
         </div>
         
         <div class="service-item reverse">
             <div class="service-image">
-                <img src="{{ url_for('static', filename='images/6.jpg') }}" alt="Analisis Data">
+                <img src="{{ url_for('serve_image', filename='custom-tech-real.png') }}" alt="Custom Technology Development">
             </div>
             <div class="service-content">
-                <h2>Analisis Data & Business Intelligence</h2>
-                <p>Kami membantu bisnis Anda mengubah data menjadi wawasan yang dapat ditindaklanjuti untuk pengambilan keputusan yang lebih baik. Layanan analisis data kami meliputi:</p>
+                <h2>Custom Technology Development</h2>
+                <p>Kami mengembangkan solusi teknologi kustom yang disesuaikan dengan kebutuhan spesifik bisnis Anda. Layanan pengembangan teknologi kustom kami meliputi:</p>
                 <ul>
-                    <li>Data Warehousing</li>
-                    <li>Business Intelligence</li>
-                    <li>Dashboard & Visualisasi Data</li>
-                    <li>Analisis Prediktif</li>
-                    <li>Big Data Processing</li>
-                    <li>Machine Learning</li>
+                    <li>Pengembangan Software Kustom</li>
+                    <li>Solusi IoT Khusus</li>
+                    <li>Integrasi Sistem</li>
+                    <li>Otomatisasi Proses Bisnis</li>
+                    <li>Pengembangan Aplikasi Enterprise</li>
                 </ul>
-                <p>Tim kami menggunakan tools dan teknologi terbaru seperti Python, R, Tableau, Power BI, dan TensorFlow untuk menganalisis data Anda dan memberikan wawasan yang berharga.</p>
+                <p>Tim ahli kami bekerja sama dengan Anda untuk memahami kebutuhan bisnis Anda dan mengembangkan solusi teknologi yang tepat untuk mengatasi tantangan spesifik Anda.</p>
+                <a href="{{ url_for('contact') }}" class="btn-secondary">Konsultasi Gratis</a>
             </div>
         </div>
         
+        <h2 class="services-category-title">Produk Kebutuhan Pangan</h2>
+        
         <div class="service-item">
             <div class="service-image">
-                <img src="{{ url_for('static', filename='images/7.jpg') }}" alt="Konsultasi IT">
+                <img src="{{ url_for('serve_image', filename='eggs-product.png') }}" alt="Produk Telur">
             </div>
             <div class="service-content">
-                <h2>Konsultasi IT</h2>
-                <p>Kami menyediakan layanan konsultasi IT untuk membantu bisnis Anda merencanakan dan mengimplementasikan strategi teknologi yang efektif. Layanan konsultasi kami meliputi:</p>
-                <ul>
-                    <li>Perencanaan Strategi IT</li>
-                    <li>Audit Teknologi</li>
-                    <li>Manajemen Proyek IT</li>
-                    <li>Konsultasi Keamanan IT</li>
-                    <li>Transformasi Digital</li>
-                </ul>
-                <p>Konsultan kami yang berpengalaman akan bekerja sama dengan tim Anda untuk memahami kebutuhan bisnis Anda dan merekomendasikan solusi teknologi yang tepat.</p>
+                <h2>Produk Telur</h2>
+                <p>Kami menyediakan berbagai jenis produk telur berkualitas tinggi untuk kebutuhan rumah tangga dan industri. Produk telur kami meliputi:</p>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="{{ url_for('serve_image', filename='egg-whole.png') }}" alt="Telur Butir">
+                        </div>
+                        <h3>Telur Butir</h3>
+                        <p>Telur utuh segar berkualitas premium</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="{{ url_for('serve_image', filename='egg-beaten.png') }}" alt="Telur Kocok">
+                        </div>
+                        <h3>Telur Kocok</h3>
+                        <p>Telur yang sudah dikocok, siap untuk digunakan</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="{{ url_for('serve_image', filename='egg-white.png') }}" alt="Putih Telur">
+                        </div>
+                        <h3>Putih Telur</h3>
+                        <p>Putih telur saja, ideal untuk diet protein</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="{{ url_for('serve_image', filename='egg-yolk.png') }}" alt="Kuning Telur">
+                        </div>
+                        <h3>Kuning Telur</h3>
+                        <p>Kuning telur saja, sempurna untuk kue dan saus</p>
+                    </div>
+                </div>
+                
+                <h3 class="product-subtitle">Jenis Telur</h3>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="{{ url_for('serve_image', filename='egg-regular.png') }}" alt="Telur Biasa">
+                        </div>
+                        <h3>Telur Biasa</h3>
+                        <p>Telur ayam berkualitas tinggi dari peternakan lokal</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="{{ url_for('serve_image', filename='egg-omega.png') }}" alt="Telur Omega">
+                        </div>
+                        <h3>Telur Omega</h3>
+                        <p>Telur kaya Omega-3 dari ayam yang diberi pakan khusus</p>
+                    </div>
+                </div>
+                <a href="{{ url_for('contact') }}" class="btn-secondary">Pesan Sekarang</a>
+            </div>
+        </div>
+        
+        <div class="service-item reverse">
+            <div class="service-image">
+                <img src="{{ url_for('serve_image', filename='vegetables-product.png') }}" alt="Produk Sayuran">
+            </div>
+            <div class="service-content">
+                <h2>Produk Sayuran</h2>
+                <p>Kami menyediakan sayuran segar berkualitas tinggi yang ditanam dengan metode pertanian modern dan berkelanjutan. Produk sayuran kami meliputi:</p>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="{{ url_for('serve_image', filename='vegetable-lettuce.png') }}" alt="Selada">
+                        </div>
+                        <h3>Selada</h3>
+                        <p>Selada segar dan renyah, ditanam dengan metode hidroponik</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="{{ url_for('serve_image', filename='vegetable-cabbage.png') }}" alt="Kol">
+                        </div>
+                        <h3>Kol</h3>
+                        <p>Kol segar dengan daun yang rapat dan renyah</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="{{ url_for('serve_image', filename='vegetable-tomato.png') }}" alt="Tomat">
+                        </div>
+                        <h3>Tomat</h3>
+                        <p>Tomat merah segar dengan rasa manis dan sedikit asam</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="{{ url_for('serve_image', filename='vegetable-chili.png') }}" alt="Cabai">
+                        </div>
+                        <h3>Cabai</h3>
+                        <p>Cabai segar dengan tingkat kepedasan yang bervariasi</p>
+                    </div>
+                </div>
+                <a href="{{ url_for('contact') }}" class="btn-secondary">Pesan Sekarang</a>
             </div>
         </div>
     </div>
